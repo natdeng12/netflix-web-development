@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Bone</title>
+
+    <link rel="stylesheet" href="sass/style.css">
+
+        <!--typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img 
+            src="images/icons/netflix-logo.svg" 
+            alt="Netflix logo"
+            class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="">TV Shows</a>
+                </li>
+                <li>
+                    <a href="">Movies</a>
+                </li>
+                <li>
+                    <a href="">New & Popular</a>
+                </li>
+                <li>
+                    <a href="">My List</a>
+                </li>
+                <li>
+                    <a href="">Watch Again</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header--icons">
+            <button id="menuBtn" class="menu-icon">
+                <img src="images/icons/menu.svg" alt="Menu">
+            </button>
+            <button id="searchBtn">
+                <img src="images/icons/search.svg" alt="Search">
+            </button>
+        </div>
+    </header>
+
+    <nav id="mobileNav" class="mobile-nav">
+        <button id="closeBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+        <div class="nav-text">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="single.html">TV Shows</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">New & Popular</a></li>
+                <li><a href="">My List</a></li>
+                <li><a href="">Watch Again</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div id="overlaySearch" class="overlaySearch">
+        <button id="overlayCloseBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+
+        <div class="container--narrow">
+            <div class="forms-group">
+                <input type="text" class="form--text" placeholder="Titles, people, genres...">
+                <button class="search-btn">
+                    <img src="images/icons/search.svg" alt="Search" >
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="videoOverlay" class="overlay">
+        <button id="playCloseBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+        <div class="container--narrow">
+            <img src="images/star-trek/star-trek-video.png" alt="Star Trek Video" class="responsive-img overlayVideo">
+        </div>
+        
+    </div>
+
+    <main>
+        <section class="showcase shadow-and-bone">
+            <div class="container">
+                <img 
+                    src="images/shadow-and-bone/shadow-bone-story-art.png" 
+                    alt="Shadow and Bone movie"
+                    class="responsive-img showcase--img">
+                    
+                    <div class="showcase--text">
+                        <img 
+                            src="images/shadow-and-bone/shadow-and-bone-logo.png" alt="Shadow and Bone logo"
+                            class="responsive-img shadow-logo ">
+        
+                        <p>Dark forces conspire against orphan mapmaker Alina Starkov when she unleashes an extraordinary power that could change the fate of her war-torn world.</p>
+                        <div class="showcase--btn">
+                            <button id="playBtn" class="playBtn">
+                                Play Episode 1
+                                <img src="images/icons/play-circle-regular.svg" alt="Play Button" class="button--icon">
+                            </button>
+        
+                        </div>
+                    </div><!--/showcase--text-->
+            </div>
+
+
+
+            <div id="videoOverlay" class="overlay">
+                <button id="overlayCloseBtn" class="closeBtn">
+                    <img src="images/icons/close.svg" alt="Close Button">
+                </button>
+                <img src="images/star-trek/star-trek-video.png" alt="Star Trek Video" class="responsive-img overlayVideo">
+            </div>
+        </section>
+
+        <section class="episodes">
+            <div class="container--narrow">
+                <div class="season-nav">
+                    <h2>Season 1</h2>
+                    <form action="" class="">
+                        <select name="seasons" id="seasonsSelectList" class="select-list">
+                            <option value="s01">Season 1</option>
+                            <option value="s02">Season 2</option>
+                        </select>
+                    </form>
+                </div><!--/row-->
+                <div id="s01" class="season">
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep1.jpg" alt="Episode 1" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>1. A Searing Burst of Light</h3>
+                            <p>Unwilling to be separated from Mal, Alina hatches a plan to join him on a perilous expedition through the Fold. Kaz chases a lead on a lucrative job.</p>
+                            <h4>52 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep2.jpg" alt="Episode 2" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>2. We're All Someone's Monster</h3>
+                            <p>Alina's actions against the Volcra bring her to the attention of General Kirigan. Kaz runs into trouble while looking for safe passage across the Fold.</p>
+                            <h4>52 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep3.jpg" alt="Episode 3" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>3. The Making at the Heart of the World</h3>
+                            <p>Ensconced in the lap of luxury among the Grisha, Alina begins her training. The crows—Kaz, Inej and Jesper—prepare for their risky journey.</p>
+                            <h4>48 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep4.jpg" alt="Episode 4" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>4. Otkazat'sya</h3>
+                            <p>As Kirigan takes Alina into his confidence, Mal volunteers for a dangerous tracjing mission, and the Crows plot a heist to get into Little Palace.</p>
+                            <h4>51 min.</h4>
+                        </div>
+                    </article>
+                </div><!--/s01-->
+                <div id="s02" class="season">
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep5.jpg" alt="Episode 5" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>5. Show Me Who You Are</h3>
+                            <p>Alina's bond with Kirigan grows as royal guests gather for her unveiling. Mal carries news about the stag. Kaz's scheme hinges on a hidden door.</p>
+                            <h4>58 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep6.jpg" alt="Episode 6" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>6. The Heart is an Arrow</h3>
+                            <p>Furious over the Sun Summoner, Kirigan hunts for information. Alina receives a helping hand when she needs it most. Nina warms to a Grisha hunter.</p>
+                            <h4>54 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep7.jpg" alt="Episode 7" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>7. The Unsea</h3>
+                            <p>The fate of the stag leaves Alina in an impossible position with Kirigan, whose connection to the Fold—and the power behind it—falls into place.</p>
+                            <h4>52 min.</h4>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="col col--xs--12 col--sm--4">
+                            <img src="images/shadow-and-bone/episodes/ep8.jpg" alt="Episode 8" class="responsive-img">
+                        </div><!--/image-->
+                        <div class="col col--sm--8">
+                            <h3>8. No Mourners</h3>
+                            <p>In the depths of the Fold, Kirigan demonstrates the scope of Alina's powers, while the Crows cross paths with a stowaway amid a do-or-die undertaking.</p>
+                            <h4>45 min.</h4>
+                        </div>
+                    </article>
+                </div><!--/s02-->
+            </div><!--/container-->
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container--footer">
+                <div class="social-medias">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/netflixus/?brand_redir=475822799216240" target="_blank">
+                                <img src="images/icons/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="https://twitter.com/netflix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                                <img src="images/icons/twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="https://www.instagram.com/netflix/?hl=es" target="_blank">
+                                <img src="images/icons/instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+    
+            <div class="row-footer">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Audio and Subtitles</a></li>
+                        <li><a href="">Media Center</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Audio Description</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">Cookies Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Gift Cards</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 1997-2021 Netflix, Inc.</p>
+            </div>
+    
+        </div> <!--/container-->
+    </footer>
+
+
+
+    <div id="videoOverlay" class="overlay">
+        overlay content goes here
+        <button id="overlayCloseBtn">
+            close
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>  <!--go load a JS file-->
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="sass/style.css">
+
+        <!--typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img 
+            src="images/icons/netflix-logo.svg" 
+            alt="Netflix logo"
+            class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="">TV Shows</a>
+                </li>
+                <li>
+                    <a href="">Movies</a>
+                </li>
+                <li>
+                    <a href="">New & Popular</a>
+                </li>
+                <li>
+                    <a href="">My List</a>
+                </li>
+                <li>
+                    <a href="">Watch Again</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header--icons">
+            <button id="menuBtn" class="menu-icon">
+                <img src="images/icons/menu.svg" alt="Menu">
+            </button>
+            <button id="searchBtn">
+                <img src="images/icons/search.svg" alt="Search">
+            </button>
+        </div>
+    </header>
+
+    <nav id="mobileNav" class="mobile-nav">
+        <button id="closeBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+        <div class="nav-text">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="single.html">TV Shows</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">New & Popular</a></li>
+                <li><a href="">My List</a></li>
+                <li><a href="">Watch Again</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div id="overlaySearch" class="overlaySearch">
+        <button id="overlayCloseBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+
+        <div class="container--narrow">
+            <div class="forms-group">
+                <input type="text" class="form--text" placeholder="Titles, people, genres...">
+                <button class="search-btn">
+                    <img src="images/icons/search.svg" alt="Search" >
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="videoOverlay" class="overlay">
+        <button id="playCloseBtn" class="closeBtn">
+            <img src="images/icons/close.svg" alt="Close Button">
+        </button>
+        <div class="container--narrow">
+            <img src="images/star-trek/star-trek-video.png" alt="Star Trek Video" class="responsive-img overlayVideo">
+        </div>
+        
+    </div>
+
+
+    <main>
+        <section class="showcase startrek">
+            <div class="container">
+                <img 
+                    src="images/star-trek/vignette.png" 
+                    alt="Star Trek movie"
+                    class="responsive-img showcase--img">
+                    
+                    <div class="showcase--text">
+                        <img 
+                            src="images/star-trek/startrek-logo.png" alt="Star Trek logo"
+                            class="responsive-img startreck-logo">
+        
+                        <p class="intro">On their first voyage aboard the starship Enterprise, cocky rebel James T. Kirk and logic-driven Volcan Spock try to defeat a bengeful Romulan commamder.</p>
+                        <div class="showcase--btn">
+                            <button id="playBtn" class="playBtn">
+                                Play now
+                                <img src="images/icons/play-circle-regular.svg" alt="Play Button" class="button--icon">
+                            </button>
+                            <a href="single.html" class="infoBtn">
+                                <p>More Info</p> 
+                                <img src="images/icons/information.svg" alt="Infomation Button" class="button--icon">
+                            </a>
+                        </div>
+                    </div><!--/showcase--text-->
+            </div>
+
+
+
+
+        </section>
+
+        <section class="movies">
+            <div class="container">
+                <h2>Top movies</h2>
+                <div class="grid">
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/a-life-of-speed.jpg" 
+                            alt="A Life of Speed movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/a-life-on-our-planet.jpg" 
+                            alt="A Life on Our Planet movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/army-of-the-dead.jpg" 
+                            alt="Army of the Dead movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/enola-holmes.jpg" 
+                            alt="Enola Holmes movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/extraction.jpg" 
+                            alt="Extraction movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/fatherhood.jpg" 
+                            alt="Fatherhood movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/go-karts.jpg" 
+                            alt="Go Karts movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/gunpowder-milkshake.jpg" 
+                            alt="Gunpowder Milkshake movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/ice-road.jpg" 
+                            alt="Ice Road movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/irishman.jpg" 
+                            alt="Irishman movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/mercury-13.jpg" 
+                            alt="Mercury 13 movie"
+                            class="responsive-img">
+                    </article>
+                    <article class="col col--xs--6 col--sm--4 col--md--3 ">
+                        <img 
+                            src="images/netflix-originals/mitchells-vs-the-machines.jpg" 
+                            alt="Mitchells Vs the Machines movie"
+                            class="responsive-img">
+                    </article>
+                </div><!--/grid-->
+            </div><!--/container-->
+
+        </section>
+    </main>
+
+<footer>
+    <div class="container--footer">
+            <div class="social-medias">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/netflixus/?brand_redir=475822799216240" target="_blank">
+                            <img src="images/icons/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://twitter.com/netflix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                            <img src="images/icons/twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.instagram.com/netflix/?hl=es" target="_blank">
+                            <img src="images/icons/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        <div class="row-footer">
+            <div class="footer-col">
+                <ul>
+                    <li><a href="">Audio and Subtitles</a></li>
+                    <li><a href="">Media Center</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="">Audio Description</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Legal Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Cookies Preferences</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Corporate Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 1997-2021 Netflix, Inc.</p>
+        </div>
+
+    </div> <!--/container-->
+</footer>
+        
+
+
+
+
+
+
+
+
+
+
+    <div id="videoOverlay" class="overlay">
+        overlay content goes here
+        <button id="overlayCloseBtn">
+            close
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>  <!--go load a JS file-->
+</body>
+</html>
